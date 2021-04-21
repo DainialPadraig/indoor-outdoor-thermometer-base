@@ -50,6 +50,31 @@ input.onButtonPressed(Button.A, function () {
         # . # . #
         `)
 })
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+    basic.showString("" + Math.round(temperature * (9 / 5) + 32) + "F")
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . # . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . # . .
+        . # # # .
+        . . # . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        # . # . #
+        . # # # .
+        # # # # #
+        . # # # .
+        # . # . #
+        `)
+})
 input.onButtonPressed(Button.B, function () {
     radio.sendString("remote")
 })
